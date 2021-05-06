@@ -1925,8 +1925,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -1946,7 +1944,7 @@ __webpack_require__.r(__webpack_exports__);
     deleteCategory: function deleteCategory(id) {
       var _this2 = this;
 
-      if (confirm('dd')) {
+      if (confirm('Are you want to delete this!')) {
         var uri = "/api/post/delete/".concat(id);
         this.axios["delete"](uri).then(function (response) {
           _this2.categories.splice(_this2.categories.indexOf(id), 1);
@@ -37986,7 +37984,7 @@ var staticRenderFns = [
       },
       [
         _c("span", { staticClass: "text-secondary" }, [
-          _vm._v("Laravel Vue CRUD Example")
+          _vm._v("Laravel Vue CRUD")
         ])
       ]
     )
@@ -38163,7 +38161,7 @@ var render = function() {
                       }
                     ],
                     staticClass: "form-control",
-                    attrs: { type: "text" },
+                    attrs: { required: "", type: "text" },
                     domProps: { value: _vm.type },
                     on: {
                       input: function($event) {
@@ -38191,7 +38189,7 @@ var render = function() {
                       }
                     ],
                     staticClass: "form-control",
-                    attrs: { type: "text" },
+                    attrs: { required: "", type: "text" },
                     domProps: { value: _vm.titile },
                     on: {
                       input: function($event) {
@@ -38219,7 +38217,7 @@ var render = function() {
                       }
                     ],
                     staticClass: "form-control",
-                    attrs: { type: "text" },
+                    attrs: { required: "", type: "text" },
                     domProps: { value: _vm.description },
                     on: {
                       input: function($event) {
@@ -38317,7 +38315,7 @@ var render = function() {
                         }
                       ],
                       staticClass: "form-control",
-                      attrs: { type: "text" },
+                      attrs: { required: "", type: "text" },
                       domProps: { value: _vm.product.type },
                       on: {
                         input: function($event) {
@@ -38345,7 +38343,7 @@ var render = function() {
                         }
                       ],
                       staticClass: "form-control",
-                      attrs: { type: "text" },
+                      attrs: { trequired: "", ype: "text" },
                       domProps: { value: _vm.product.titile },
                       on: {
                         input: function($event) {
@@ -38373,7 +38371,7 @@ var render = function() {
                         }
                       ],
                       staticClass: "form-control",
-                      attrs: { type: "text" },
+                      attrs: { required: "", type: "text" },
                       domProps: { value: _vm.product.description },
                       on: {
                         input: function($event) {
@@ -38406,7 +38404,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "card-header" }, [
-      _c("h4", [_vm._v("Add Category")])
+      _c("h4", [_vm._v("Edit Category")])
     ])
   },
   function() {

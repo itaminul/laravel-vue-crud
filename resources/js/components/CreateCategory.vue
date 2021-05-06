@@ -11,19 +11,19 @@
                             <div class="col-12 mb-2">
                                 <div class="form-group">
                                     <label>Type</label>
-                                    <input type="text" class="form-control" v-model="type">
+                                    <input required type="text" class="form-control" v-model="type">
                                 </div>
                             </div>
                             <div class="col-12 mb-2">
                                 <div class="form-group">
                                     <label>Title</label>
-                                    <input type="text" class="form-control" v-model="titile">
+                                    <input required type="text" class="form-control" v-model="titile">
                                 </div>
                             </div>
                             <div class="col-12 mb-2">
                                 <div class="form-group">
                                     <label>Description</label>
-                                    <input type="text" class="form-control" v-model="description">
+                                    <input required type="text" class="form-control" v-model="description">
                                 </div>
                             </div>
                             <div class="col-12">

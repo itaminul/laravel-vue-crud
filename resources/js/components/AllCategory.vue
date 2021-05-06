@@ -4,12 +4,10 @@
     <br />
       <div class="card-header">
                     
-                        <span style="margin-left:92%;">
+    <span style="margin-left:92%;">
        <router-link :to='{name:"create"}' class="btn btn-primary">Create</router-link>
     </span>
-                </div>
-
-
+  </div>
     <table class="table table-bordered">
       <thead>
         <tr>
@@ -63,7 +61,7 @@ export default {
   methods: {
       deleteCategory(id)
       {
-        if(confirm('dd')){ 
+        if(confirm('Are you want to delete this!')){ 
         let uri = `/api/post/delete/${id}`;
         this.axios.delete(uri).then(response => {
           this.categories.splice(this.categories.indexOf(id), 1);
